@@ -18,30 +18,33 @@
   <canvas id="bg"></canvas>
   <div class="overlay">
     <h2>Fly Anywhere in the World</h2>
-    <p>Instant Booking • Secure Payment • Best Prices</p>
+    <p>Instant Booking • WhatsApp Confirmation</p>
   </div>
 </section>
 
 <section id="book" class="booking">
   <h2>Search Flights</h2>
-  <form>
-    <input placeholder="From (City / Airport)" required>
-    <input placeholder="To (City / Airport)" required>
-    <input type="date" required>
-    <select>
-      <option>1 Passenger</option>
-      <option>2 Passengers</option>
-      <option>3 Passengers</option>
+
+  <form id="bookingForm">
+    <input id="from" placeholder="From (City / Airport)" required>
+    <input id="to" placeholder="To (City / Airport)" required>
+    <input id="date" type="date" required>
+    <select id="passengers">
+      <option value="1">1 Passenger</option>
+      <option value="2">2 Passengers</option>
+      <option value="3">3 Passengers</option>
     </select>
-    <button type="submit">Search Flights</button>
+
+    <button type="submit">Book via WhatsApp</button>
   </form>
-  <p class="note">* Live prices connected after API setup</p>
+
+  <p class="note">You will be redirected to WhatsApp</p>
 </section>
 
 <section class="payment">
-  <h2>Secure Payments</h2>
-  <p>We accept Stripe & PayPal</p>
-  <div class="pay-icons">💳 🅿️</div>
+  <h2>Easy Booking</h2>
+  <p>Chat with us on WhatsApp & get instant support</p>
+  <div class="pay-icons">📱 💬</div>
 </section>
 
 <footer>
@@ -53,3 +56,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
