@@ -1,54 +1,97 @@
-<section class="service-menu">
-  <ul class="menu-tabs">
-    <li class="active">
-      <img src="icons/flight.png" alt="Flights">
-      <span>Flights</span>
-    </li>
-    <li>
-      <img src="icons/hotel.png" alt="Hotels">
-      <span>Hotels</span>
-    </li>
-    <li>
-      <img src="icons/homestay.png" alt="Homestays & Villas">
-      <span>Homestays & Villas</span>
-    </li>
-    <li>
-      <img src="icons/holiday.png" alt="Holiday Packages">
-      <span>Holiday Packages</span>
-    </li>
-    <li>
-      <img src="icons/trains.png" alt="Trains">
-      <span>Trains</span>
-    </li>
-    <li>
-      <img src="icons/buses.png" alt="Buses">
-      <span>Buses</span>
-    </li>
-    <li>
-      <img src="icons/cabs.png" alt="Cabs">
-      <span>Cabs</span>
-    </li>
-    <li class="new">
-      <img src="icons/tours.png" alt="Tours & Attractions">
-      <span>Tours & Attractions</span>
-      <span class="badge">new</span>
-    </li>
-    <li>
-      <img src="icons/visa.png" alt="Visa">
-      <span>Visa</span>
-    </li>
-    <li class="new">
-      <img src="icons/cruise.png" alt="Cruise">
-      <span>Cruise</span>
-      <span class="badge">new</span>
-    </li>
-    <li>
-      <img src="icons/forex.png" alt="Forex Card & Currency">
-      <span>Forex Card & Currency</span>
-    </li>
-    <li>
-      <img src="icons/insurance.png" alt="Travel Insurance">
-      <span>Travel Insurance</span>
-    </li>
-  </ul>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyway Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Skyway Travel</div>
+    <nav>
+      <ul>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SERVICE MENU -->
+  <section class="service-menu">
+    <ul class="menu-tabs">
+      <li class="active"><img src="icons/flight.png" alt="Flights"><span>Flights</span></li>
+      <li><img src="icons/hotel.png" alt="Hotels"><span>Hotels</span></li>
+      <li><img src="icons/homestay.png" alt="Homestays & Villas"><span>Homestays & Villas</span></li>
+      <li><img src="icons/holiday.png" alt="Holiday Packages"><span>Holiday Packages</span></li>
+      <li><img src="icons/trains.png" alt="Trains"><span>Trains</span></li>
+      <li><img src="icons/buses.png" alt="Buses"><span>Buses</span></li>
+      <li><img src="icons/cabs.png" alt="Cabs"><span>Cabs</span></li>
+      <li class="new"><img src="icons/tours.png" alt="Tours & Attractions"><span>Tours & Attractions</span><span class="badge">new</span></li>
+      <li><img src="icons/visa.png" alt="Visa"><span>Visa</span></li>
+      <li class="new"><img src="icons/cruise.png" alt="Cruise"><span>Cruise</span><span class="badge">new</span></li>
+      <li><img src="icons/forex.png" alt="Forex Card & Currency"><span>Forex Card & Currency</span></li>
+      <li><img src="icons/insurance.png" alt="Travel Insurance"><span>Travel Insurance</span></li>
+    </ul>
+  </section>
+
+  <!-- HERO + BOOKING FORM -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Book Flights, Hotels & More</h1>
+      <p>Fast, secure, and easy booking experience</p>
+    </div>
+    <div class="booking-form">
+      <form id="flightForm">
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" placeholder="City or Airport" required>
+        </div>
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" placeholder="City or Airport" required>
+        </div>
+        <div class="form-group">
+          <label>Departure</label>
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <label>Return</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Passengers</label>
+          <input type="number" min="1" value="1" required>
+        </div>
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3>Best Prices</h3>
+      <p>Compare multiple airlines for the best deals.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure Booking</h3>
+      <p>Your payments are safe with 256-bit encryption.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>We’re always here to help you with your trips.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Skyway Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
