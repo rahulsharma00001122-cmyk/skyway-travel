@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>SkyWay Pro – Book Flights Worldwide</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyway Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header>
+    <div class="logo">Skyway Travel</div>
+    <nav>
+      <ul>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header class="top">
-  <h1>✈ SkyWay Pro</h1>
-  <p>Global Air Ticket Booking</p>
-  <a href="#book" class="cta">Book Now</a>
-</header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Book Flights, Hotels & More</h1>
+      <p>Fast, secure, and easy booking experience</p>
+    </div>
+    <div class="booking-form">
+      <form id="flightForm">
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" placeholder="City or Airport" required>
+        </div>
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" placeholder="City or Airport" required>
+        </div>
+        <div class="form-group">
+          <label>Departure</label>
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <label>Return</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Passengers</label>
+          <input type="number" min="1" value="1" required>
+        </div>
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+  </section>
 
-<section class="hero">
-  <canvas id="bg"></canvas>
-  <div class="overlay">
-    <h2>Fly Anywhere in the World</h2>
-    <p>Instant Booking • WhatsApp Confirmation</p>
-  </div>
-</section>
+  <section class="features">
+    <div class="feature">
+      <h3>Best Prices</h3>
+      <p>Compare multiple airlines for the best deals.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure Booking</h3>
+      <p>Your payments are safe with 256-bit encryption.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>We’re always here to help you with your trips.</p>
+    </div>
+  </section>
 
-<section id="book" class="booking">
-  <h2>Search Flights</h2>
-
-  <form id="bookingForm">
-    <input id="from" placeholder="From (City / Airport)" required>
-    <input id="to" placeholder="To (City / Airport)" required>
-    <input id="date" type="date" required>
-    <select id="passengers">
-      <option value="1">1 Passenger</option>
-      <option value="2">2 Passengers</option>
-      <option value="3">3 Passengers</option>
-    </select>
-
-    <button type="submit">Book via WhatsApp</button>
-  </form>
-
-  <p class="note">You will be redirected to WhatsApp</p>
-</section>
-
-<section class="payment">
-  <h2>Easy Booking</h2>
-  <p>Chat with us on WhatsApp & get instant support</p>
-  <div class="pay-icons">📱 💬</div>
-</section>
-
-<footer>
-  <p>© 2025 SkyWay Pro Travels</p>
-  <p>WhatsApp Booking: +123-456-7890</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
-<script src="script.js"></script>
+  <footer>
+    <p>© 2025 Skyway Travel. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
