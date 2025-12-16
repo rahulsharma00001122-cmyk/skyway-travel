@@ -18,24 +18,49 @@
         <li><a href="#">Packages</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <button id="darkToggle" class="dark-btn">🌙</button>
     </nav>
   </header>
 
   <!-- SERVICE MENU -->
   <section class="service-menu">
     <ul class="menu-tabs">
-      <li class="active"><img src="icons/flight.png" alt="Flights"><span>Flights</span></li>
-      <li><img src="icons/hotel.png" alt="Hotels"><span>Hotels</span></li>
-      <li><img src="icons/homestay.png" alt="Homestays & Villas"><span>Homestays & Villas</span></li>
-      <li><img src="icons/holiday.png" alt="Holiday Packages"><span>Holiday Packages</span></li>
-      <li><img src="icons/trains.png" alt="Trains"><span>Trains</span></li>
-      <li><img src="icons/buses.png" alt="Buses"><span>Buses</span></li>
-      <li><img src="icons/cabs.png" alt="Cabs"><span>Cabs</span></li>
-      <li class="new"><img src="icons/tours.png" alt="Tours & Attractions"><span>Tours & Attractions</span><span class="badge">new</span></li>
-      <li><img src="icons/visa.png" alt="Visa"><span>Visa</span></li>
-      <li class="new"><img src="icons/cruise.png" alt="Cruise"><span>Cruise</span><span class="badge">new</span></li>
-      <li><img src="icons/forex.png" alt="Forex Card & Currency"><span>Forex Card & Currency</span></li>
-      <li><img src="icons/insurance.png" alt="Travel Insurance"><span>Travel Insurance</span></li>
+      <li class="active">
+        <img src="https://img.icons8.com/ios-filled/50/airplane-take-off.png"><span>Flights</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/hotel.png"><span>Hotels</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/home.png"><span>Homestays & Villas</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/beach.png"><span>Holiday Packages</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/train.png"><span>Trains</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/bus.png"><span>Buses</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/taxi.png"><span>Cabs</span>
+      </li>
+      <li class="new">
+        <img src="https://img.icons8.com/ios-filled/50/tour-guide.png"><span>Tours & Attractions</span><span class="badge">new</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/passport.png"><span>Visa</span>
+      </li>
+      <li class="new">
+        <img src="https://img.icons8.com/ios-filled/50/cruise-ship.png"><span>Cruise</span><span class="badge">new</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/money.png"><span>Forex Card & Currency</span>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/ios-filled/50/security-checked.png"><span>Travel Insurance</span>
+      </li>
     </ul>
   </section>
 
@@ -67,26 +92,93 @@
           <label>Passengers</label>
           <input type="number" min="1" value="1" required>
         </div>
-        <button type="submit">Search Flights</button>
+        <button type="submit" id="searchBtn">Search Flights</button>
       </form>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Searching best flights for you...</p>
+      </div>
+
+      <div id="results" class="results hidden">
+        <h3>🎉 Booking Successful!</h3>
+        <p>Flight: Delhi → Mumbai</p>
+        <p>Airline: IndiGo</p>
+        <p>Price: ₹5,499</p>
+        <p>Status: Confirmed ✅</p>
+      </div>
     </div>
   </section>
 
   <!-- FEATURES -->
   <section class="features">
     <div class="feature">
+      <img src="https://img.icons8.com/color/96/cheap-2.png">
       <h3>Best Prices</h3>
       <p>Compare multiple airlines for the best deals.</p>
     </div>
     <div class="feature">
+      <img src="https://img.icons8.com/color/96/lock--v1.png">
       <h3>Secure Booking</h3>
       <p>Your payments are safe with 256-bit encryption.</p>
     </div>
     <div class="feature">
+      <img src="https://img.icons8.com/color/96/customer-support.png">
       <h3>24/7 Support</h3>
       <p>We’re always here to help you with your trips.</p>
     </div>
   </section>
+
+  <!-- POPULAR DESTINATIONS -->
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-cards">
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+        <div class="overlay">
+          <h3>Maldives</h3>
+          <p>From ₹35,000</p>
+        </div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+        <div class="overlay">
+          <h3>Paris</h3>
+          <p>From ₹55,000</p>
+        </div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Dubai">
+        <div class="overlay">
+          <h3>Dubai</h3>
+          <p>From ₹40,000</p>
+        </div>
+      </div>
+      <div class="destination">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Thailand">
+        <div class="overlay">
+          <h3>Thailand</h3>
+          <p>From ₹30,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGIN / SIGNUP MODAL -->
+  <div id="authModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 id="modalTitle">Login</h2>
+      <form id="authForm">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="switch">
+          Don't have an account? <span id="switchAuth">Sign Up</span>
+        </p>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -94,4 +186,5 @@
   </footer>
 </body>
 </html>
+
 
