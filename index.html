@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SkyWay Pro – Book Flights Worldwide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>✈ SkyWay Pro</h1>
+  <p>Global Air Ticket Booking</p>
+  <a href="#book" class="cta">Book Now</a>
+</header>
+
+<section class="hero">
+  <canvas id="bg"></canvas>
+  <div class="overlay">
+    <h2>Fly Anywhere in the World</h2>
+    <p>Instant Booking • Secure Payment • Best Prices</p>
+  </div>
+</section>
+
+<section id="book" class="booking">
+  <h2>Search Flights</h2>
+  <form>
+    <input placeholder="From (City / Airport)" required>
+    <input placeholder="To (City / Airport)" required>
+    <input type="date" required>
+    <select>
+      <option>1 Passenger</option>
+      <option>2 Passengers</option>
+      <option>3 Passengers</option>
+    </select>
+    <button type="submit">Search Flights</button>
+  </form>
+  <p class="note">* Live prices connected after API setup</p>
+</section>
+
+<section class="payment">
+  <h2>Secure Payments</h2>
+  <p>We accept Stripe & PayPal</p>
+  <div class="pay-icons">💳 🅿️</div>
+</section>
+
+<footer>
+  <p>© 2025 SkyWay Pro Travels</p>
+  <p>WhatsApp Booking: +123-456-7890</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
