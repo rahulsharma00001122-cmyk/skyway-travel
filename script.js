@@ -74,7 +74,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
     `Date: ${date}%0A` +
     `Passengers: ${passengers}`;
 
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+  const whatsappURL = `https://wa.me/${+234 911 180 1111}?text=${message}`;
 
   window.open(whatsappURL, "_blank");
 });
